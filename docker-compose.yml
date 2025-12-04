@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  # 1. 톰캣 (내 웹앱)
+  webapp:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    container_name: my-tomcat-server
+
+  # 2. MySQL
+  db:
+    image: mysql:8.0
+    container_name: my-mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mydb  # 원하는 DB 이름
+    ports:
+      - "3307:3306"
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
