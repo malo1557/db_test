@@ -15,5 +15,4 @@
         new PublisherService().insertPublisher(publisher);
     }
 
-    response.sendRedirect("publisher_list.jsp");
 %>

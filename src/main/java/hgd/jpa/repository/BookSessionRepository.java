@@ -14,12 +14,6 @@ public class BookSessionRepository {
         }
     }
 
-    // Read (전체 조회)
-    public List<Book> selectBookAll() {
-        try (EntityManager em = emf.createEntityManager()) {
-            return em.createQuery("SELECT b FROM Book b", Book.class).getResultList();
-        }
-    }
 
     // Create (등록)
     public Integer insertBook(Book book) {

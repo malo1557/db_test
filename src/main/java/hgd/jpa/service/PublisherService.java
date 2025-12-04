@@ -12,9 +12,9 @@ public class PublisherService {
         return repo.selectPublisherByPrimaryKey(publisherId);
     }
 
-    public List<Publisher> selectPublisherAll() {
-        return repo.selectPublisherAll();
-    }
+//    public List<Publisher> selectPublisherAll() {
+//        return repo.selectPublisherAll();
+//    }
 
     public Integer insertPublisher(Publisher publisher) {
         return repo.insertPublisher(publisher);

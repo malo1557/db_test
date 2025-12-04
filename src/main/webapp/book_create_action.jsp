@@ -33,6 +33,6 @@
       bookService.insertBook(book);
     }
   }
-
-  response.sendRedirect("book_list.jsp");
+  
+  //response.sendRedirect("book_list.jsp");
 %>

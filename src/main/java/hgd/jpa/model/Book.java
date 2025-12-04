@@ -13,6 +13,8 @@ public class Book { // Serializable 제거 (필수 아님)
     @Column(name = "book_id") // DB 컬럼이 book_id라면 남기는 게 안전 (설정 모를 땐 유지)
     private Long bookId;
 
+    //컴럼명이 스네이크 표기법이라면
+    //@Column(name = "book_title")
     private String title; // @Column 생략
 
     private Integer price; // @Column 생략

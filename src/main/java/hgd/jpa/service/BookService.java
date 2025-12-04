@@ -12,9 +12,9 @@ public class BookService {
         return repo.selectBookByPrimaryKey(bookId);
     }
 
-    public List<Book> selectBookAll() {
-        return repo.selectBookAll();
-    }
+//    public List<Book> selectBookAll() {
+//        return repo.selectBookAll();
+//    }
 
     public Integer insertBook(Book book) {
         return repo.insertBook(book);

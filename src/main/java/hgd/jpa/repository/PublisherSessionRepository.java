@@ -14,12 +14,6 @@ public class PublisherSessionRepository {
         }
     }
 
-    // Read (전체 조회)
-    public List<Publisher> selectPublisherAll() {
-        try (EntityManager em = emf.createEntityManager()) {
-            return em.createQuery("SELECT p FROM Publisher p", Publisher.class).getResultList();
-        }
-    }
 
     // Create (등록)
     public Integer insertPublisher(Publisher publisher) {
