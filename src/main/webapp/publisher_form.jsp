@@ -4,4 +4,4 @@
   <label>출판사 이름: </label>
   <input type="text" name="publisherName" required>
   <button type="submit">등록</button>
-</form>
+</form>z

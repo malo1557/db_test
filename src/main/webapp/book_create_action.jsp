@@ -34,5 +34,5 @@
     }
   }
   
-  //response.sendRedirect("book_list.jsp");
+  response.sendRedirect("book_form.jsp");
 %>

@@ -25,7 +25,7 @@
   </p>
   <p>
     <label>출판사 선택: </label>
-    <input type="number" name="publisherId" required>
+    <input type="text" name="publisherId" required>
   </p>
   <button type="submit">등록</button>
 </form>
