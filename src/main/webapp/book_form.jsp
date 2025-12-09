@@ -6,9 +6,9 @@
 <%@ page import="hgd.jpa.model.Book" %>
 <%
 
-Long pbId =request.getParameter("publisherId");
-String title = request.getParameter("title");
-int price = request.getParameter("price");
+Long pbId =Long.parseLong(request.getParameter("publisherId"));
+String title =  request.getParameter("title");
+int price = Integer.parseInt(request.getParameter("price"));
 
   PublisherService pubService = new PublisherService();
   BookService bookService = new BookService();

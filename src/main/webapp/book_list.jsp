@@ -2,8 +2,7 @@
 <%@ page import="java.util.List" %>
 <%@ page import="hgd.jpa.model.Book" %>
 <%@ page import="hgd.jpa.service.BookService" %>
-<%
-    BookService service = new BookService();
+
     Long bookId = Long.parseLong(request.getParameter("bookId"));
     BookService bookService = new BookService();
     Book book =bookService.selectBookByPrimaryKey(bookId);
