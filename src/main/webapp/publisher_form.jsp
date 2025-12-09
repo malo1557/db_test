@@ -1,7 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<h2>Add Publisher</h2>
-<form action="publisher_create_action.jsp" method="post">
-  <label>출판사 이름: </label>
-  <input type="text" name="publisherName" required>
-  <button type="submit">등록</button>
-</form>z
+<%@ page import="hgd.jpa.model.Publisher" %>
+<%@ page import="hgd.jpa.service.PublisherService" %>
+
+<%
+
+  String name =request.getParameter("name");
+
+
+
+  PublisherService pubService = new PublisherService();
+
+  Publisher pb = new Publisher();
+
+  pb.setPublisherName(name);
+
+  pubService.insertPublisher(pb);
+  Integer result = pubService.insertPublisher(pb);
+%>
+<%= result %>
