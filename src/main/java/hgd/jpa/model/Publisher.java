@@ -19,7 +19,7 @@ public class Publisher {
     private String publisherName;
 
     // fetch = EAGER는 지워서 기본값(LAZY) 사용 (성능상 더 좋음)
-    @OneToMany(mappedBy = "publisher", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "publisher", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Book> books = new ArrayList<>();
 
     // 연관관계 편의 메서드 (유지)
