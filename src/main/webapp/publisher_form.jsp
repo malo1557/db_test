@@ -15,6 +15,4 @@
   pb.setPublisherName(name);
 
   pubService.insertPublisher(pb);
-  Integer result = pubService.insertPublisher(pb);
 %>
-<%= result %>

@@ -8,7 +8,7 @@
 
 Long pbId =Long.parseLong(request.getParameter("publisherId"));
 String title =  request.getParameter("title");
-int price = Integer.parseInt(request.getParameter("price"));
+Integer price = Integer.parseInt(request.getParameter("price"));
 
   PublisherService pubService = new PublisherService();
   BookService bookService = new BookService();
@@ -22,8 +22,5 @@ int price = Integer.parseInt(request.getParameter("price"));
   book.setPublisher(publisher);
 
   bookService.insertBook(book);
-
-  Integer result = bookService.insertBook(book);
 %>
 
-<%= result %>
